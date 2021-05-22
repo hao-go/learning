@@ -1,0 +1,1 @@
+import './m2.js'
