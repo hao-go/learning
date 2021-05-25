@@ -1,6 +1,15 @@
 const path = require("path");
 
+//1.导入包
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+//2.创建对象
+const htmlPlugin = new HtmlWebpackPlugin({
+    //指定复制哪个文件（设置生成预览页面的模板文件）
+    template:"./src/index.html",
+    //设置生成的预览页面名称
+    filename:"index.html"
 
+})
 module.exports={//通过这种方式向外暴露一个配置项
     
     //编译模式
@@ -13,7 +22,8 @@ module.exports={//通过这种方式向外暴露一个配置项
         path:path.join(__dirname,"./dist"),
         //设置文件名
         filename:"bundle.js"
-    }
+    },
+    plugins:[ htmlPlugin ],//定义一个数组，把刚定义的对象加进去，
 
 
 };

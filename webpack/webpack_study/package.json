@@ -1,71 +1,76 @@
 {
-  
-
+  
+
   "name": "webpack_study",
-  
-
+  
+
   "version": "1.0.0",
-  
-
+  
+
   "description": "",
-  
-
+  
+
   "main": "index.js",
-  
-
+  
+
   "scripts": {
-  
-
-    
-
+  
+
+    
+
   "test": "echo \"Error: no test specified\" && exit 1",
-  
-
-    
-
+  
+
+    
+
   "dev": "webpack server --open --host 127.0.0.1 --port 9999"
-  
-
+  
+
   },
-  
-
+  
+
   "keywords": [],
-  
-
+  
+
   "author": "",
-  
-
+  
+
   "license": "ISC",
-  
-
+  
+
   "dependencies": {
-  
-
-    
-
+  
+
+    
+
   "jquery": "^3.6.0"
-  
-
+  
+
   },
-  
-
+  
+
   "devDependencies": {
-  
-
-    
-
+  
+
+    
+
+  "html-webpack-plugin": "^5.3.1",
+  
+
+    
+
   "webpack": "^5.37.1",
-  
-
-    
-
+  
+
+    
+
   "webpack-cli": "^4.7.0",
-  
-
-    
-
+  
+
+    
+
   "webpack-dev-server": "^3.11.2"
-  
-
+  
+
   }
 }
