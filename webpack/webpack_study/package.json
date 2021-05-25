@@ -1,67 +1,73 @@
 {
-  
-"name": "webpack_study",
-  
-"version": "1.0.0",
-  
-"description": "",
-  
-"main": "index.js",
-  
-"scripts": {
-  
-  
-"test": "echo \"Error: no test specified\" && exit 1",
-  
-  
-"dev": "webpack server --open --host 127.0.0.1 --port 9999"
-  
-},
-  
-"keywords": [],
-  
-"author": "",
-  
-"license": "ISC",
-  
-"dependencies": {
-  
-  
-"jquery": "^3.6.0"
-  
-},
-  
-"devDependencies": {
-  
-  
-"css-loader": "^5.2.6",
-  
-  
-"html-webpack-plugin": "^5.3.1",
-  
-  
-"less": "^4.1.1",
-  
-  
-"less-loader": "^9.0.0",
-  
-  
-"node-sass": "^6.0.0",
-  
-  
-"sass-loader": "^11.1.1",
-  
-  
-"style-loader": "^2.0.0",
-  
-  
-"webpack": "^5.37.1",
-  
-  
-"webpack-cli": "^4.7.0",
-  
-  
-"webpack-dev-server": "^3.11.2"
-  
-}
+  
+"name": "webpack_study",
+  
+"version": "1.0.0",
+  
+"description": "",
+  
+"main": "index.js",
+  
+"scripts": {
+  
+  
+"test": "echo \"Error: no test specified\" && exit 1",
+  
+  
+"dev": "webpack server --open --host 127.0.0.1 --port 9999"
+  
+},
+  
+"keywords": [],
+  
+"author": "",
+  
+"license": "ISC",
+  
+"dependencies": {
+  
+  
+"jquery": "^3.6.0"
+  
+},
+  
+"devDependencies": {
+  
+  
+"autoprefixer": "^10.2.5",
+  
+  
+"css-loader": "^5.2.6",
+  
+  
+"html-webpack-plugin": "^5.3.1",
+  
+  
+"less": "^4.1.1",
+  
+  
+"less-loader": "^9.0.0",
+  
+  
+"node-sass": "^6.0.0",
+  
+  
+"postcss-loader": "^5.3.0",
+  
+  
+"sass-loader": "^11.1.1",
+  
+  
+"style-loader": "^2.0.0",
+  
+  
+"webpack": "^5.37.1",
+  
+  
+"webpack-cli": "^4.7.0",
+  
+  
+"webpack-dev-server": "^3.11.2"
+  
+}
 }
