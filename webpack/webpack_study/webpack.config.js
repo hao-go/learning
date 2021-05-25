@@ -31,7 +31,16 @@ module.exports={//通过这种方式向外暴露一个配置项
                 //test设置需要匹配的文件类型，支持正则
                 test:/\.css$/,
                 //use表示该文件类型需要调用的loader
-                use:['style-loader','css-loader']
+                use:['style-loader','css-loader']//loader 的书写顺序，依据调用顺序判断
+
+            },
+            {
+                test:/\.less$/,
+                use:['style-loader','css-loader','less-loader']
+            },
+            {
+                test:/\.scss$/,
+                use:['style-loader','css-loader','sass-loader']
             }
         ]
     }
