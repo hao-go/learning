@@ -8,3 +8,9 @@ li{
     color:red;
 
 }
+#box{
+    width: 520px ;
+    height: 520px;
+    background-color: pink;
+    background: url('../images/1.jpg');
+}

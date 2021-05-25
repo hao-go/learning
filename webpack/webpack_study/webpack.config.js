@@ -42,6 +42,12 @@ module.exports={//通过这种方式向外暴露一个配置项
                 test:/\.scss$/,
                 use:['style-loader','css-loader','sass-loader']
             },
+            {
+                test:/\.jpg|png|gif|bmp|ttf|eot|svg|woff|woff2$/,
+                //limit用来设置字节数，只有小于limit值的图片，才会转换
+                //为base64图片
+                use:"url-loader?limit=16940"
+            }
 
         ]
     }
