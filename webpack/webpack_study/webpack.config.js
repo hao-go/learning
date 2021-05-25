@@ -45,9 +45,15 @@ module.exports={//通过这种方式向外暴露一个配置项
             {
                 test:/\.jpg|png|gif|bmp|ttf|eot|svg|woff|woff2$/,
                 //limit用来设置字节数，只有小于limit值的图片，才会转换
-                //为base64图片
+                //为base64图片//
                 use:"url-loader?limit=16940"
-            }
+            },
+            {
+                test:/\.js$/,
+                use:"babel-loader",
+                //exclude为排除项，意思是不要处理node_modules中的js文件,只转换程序员自己写的js
+                exclude:/node_modules/
+            } 
 
         ]
     }
