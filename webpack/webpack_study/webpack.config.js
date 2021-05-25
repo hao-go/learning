@@ -25,5 +25,16 @@ module.exports={//通过这种方式向外暴露一个配置项
     },
     plugins:[ htmlPlugin ],//定义一个数组，把刚定义的对象加进去，
 
+    module:{
+        rules:[
+            {
+                //test设置需要匹配的文件类型，支持正则
+                test:/\.css$/,
+                //use表示该文件类型需要调用的loader
+                use:['style-loader','css-loader']
+            }
+        ]
+    }
+
 
 };
