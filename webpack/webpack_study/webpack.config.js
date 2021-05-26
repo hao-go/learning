@@ -10,6 +10,7 @@ const htmlPlugin = new HtmlWebpackPlugin({
     filename:"index.html"
 
 })
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
 module.exports={//通过这种方式向外暴露一个配置项
     
     //编译模式
@@ -23,7 +24,7 @@ module.exports={//通过这种方式向外暴露一个配置项
         //设置文件名
         filename:"bundle.js"
     },
-    plugins:[ htmlPlugin ],//定义一个数组，把刚定义的对象加进去，
+    plugins:[ htmlPlugin ,new VueLoaderPlugin()],//定义一个数组，把刚定义的对象加进去，
 
     module:{
         rules:[
@@ -53,7 +54,12 @@ module.exports={//通过这种方式向外暴露一个配置项
                 use:"babel-loader",
                 //exclude为排除项，意思是不要处理node_modules中的js文件,只转换程序员自己写的js
                 exclude:/node_modules/
-            } 
+            } ,
+            { 
+                test:/.vue$/,
+                loader:"vue-loader",
+            }
+
 
         ]
     }
